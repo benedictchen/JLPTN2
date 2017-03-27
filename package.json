@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.15.2",
     "express-generator": "^4.14.1",
-    "images-scraper": "^2.0.11"
+    "images-scraper": "^2.0.11",
+    "serve-favicon": "^2.4.2"
   }
 }
