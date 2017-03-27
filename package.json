@@ -10,17 +10,17 @@
   "author": "",
   "license": "GPL-3.0",
   "dependencies": {
-    "express": "^4.15.2",
-    "express-generator": "^4.14.1",
-    "heroku": "^0.2.0",
-    "images-scraper": "^2.0.11",
-    "morgan": "^1.8.1",
-    "serve-favicon": "^2.4.2",
     "body-parser": "~1.16.0",
     "cookie-parser": "^1.4.3",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
+    "express": "^4.15.2",
+    "express-asset-versions": "^0.1.2",
+    "express-generator": "^4.14.1",
+    "heroku": "^0.2.0",
+    "images-scraper": "^2.0.11",
     "less-middleware": "~2.2.0",
+    "morgan": "^1.8.1",
     "serve-favicon": "^2.3.2",
     "shuffle-array": "^1.0.1"
   }

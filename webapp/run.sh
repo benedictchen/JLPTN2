@@ -1,1 +1,1 @@
-DEBUG=webapp:* npm start
+nodemon DEBUG=webapp:* npm start

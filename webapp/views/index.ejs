@@ -2,7 +2,8 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='<%= asset('stylesheets/style.css') %>' />
+
     <link rel='stylesheet' href='/stylesheets/animate.css' />
     <link rel='stylesheet' href='/stylesheets/morphext.css' />
     <style>
@@ -21,7 +22,7 @@
     }
 
     .assoc-images {
-    	opacity: 0.2;
+    	opacity: 0.15;
     }
 
     .controls {
@@ -55,11 +56,8 @@
   </script>
   <script type='text/javascript' src='/javascripts/scripts.js'></script>
   <script>
-
-  	var GIANT_IMAGES_MAP = GIANT_IMAGES_MAP || {};
   	var isStopPressed = false;
 
-  	
   	// Randomize entries.
   	shuffle(N2_VOCAB);
 
@@ -77,10 +75,8 @@
 		var yomikata = currentVocab[0];
 		var count = 0;
 
-		if (GIANT_IMAGES_MAP) {
-			var images = GIANT_IMAGES_MAP[kanjiWithKana] || 
-						 GIANT_IMAGES_MAP[yomikata] || [];
-			console.log(GIANT_IMAGES_MAP);
+		$.get('/picturebank/' + [kanjiWithKana, yomikata].join(','), (data)=> {
+			var images = data.results || [];
 			console.log(`Images for this word: ${kanjiWithKana}`);
 			console.log(images);
 			if (imagesNode) {
@@ -96,7 +92,7 @@
 				});
 				imagesNode.appendChild(fragment);
 			}
-		}
+		});
 
 		var newElem = document.createElement('span');
 		newElem.classList.add('main-text');
@@ -178,5 +174,4 @@
 
 	
   </script>
-  <script type='text/javascript' src='/javascripts/giant-hashmap.js'></script>
 </html>
