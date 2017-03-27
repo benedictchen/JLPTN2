@@ -65,6 +65,8 @@
   </script>
   <script type='text/javascript' src='/javascripts/morphext.js'>
   </script>
+  <script type='text/javascript' src='/javascripts/wanakana.js'>
+  </script>
   <script type='text/javascript' src='/javascripts/n2-vocab.js'>
   </script>
   <script type='text/javascript' src='/javascripts/scripts.js'></script>
@@ -86,6 +88,7 @@
 		var kanjiWithKana = currentVocab[1];
 		var definition = currentVocab[2];
 		var yomikata = currentVocab[0];
+		var romaji = wanakana.toRomaji(yomikata);
 		var count = 0;
 
 		$.get('/picturebank/' + [kanjiWithKana, yomikata].join(','), (data)=> {
@@ -113,6 +116,7 @@
 			kanjiWithKana, 
 			yomikata,
 			definition, 
+			romaji,
 		].join(', ');	
 		if (wordCardNode.firstChild) {
 			wordCardNode.removeChild(wordCardNode.firstChild);	
@@ -151,11 +155,14 @@
 				    case 2:
 				        console.log(definition);
 				        break;
+				    case 3:
+				        console.log(romaji);
+				        break;
 				    default:
 				        console.log('\n');
 				}
 
-		        if (count >= 3) {
+		        if (count >= 4) {
 		        	this.stop();
 		        	$(wordCardNode).addClass('bounceInRight');
 		        	$(wordCardNode).addClass('bounceOutLeft');

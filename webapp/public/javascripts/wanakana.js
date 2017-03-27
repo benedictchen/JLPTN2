@@ -917,5 +917,5 @@ wanakana.J_to_R = {
   んよ: 'n\'yo'
 };
 
-module = module || {};
+var module = module || {};
 module.exports = wanakana;
