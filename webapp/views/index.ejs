@@ -69,7 +69,7 @@
 		var msg = new SpeechSynthesisUtterance();
 		msg.rate = 0.8;  //レート
 		msg.pitch = 1; //ピッチ
-		msg.text = kanjiWithKana || yomikata;
+		msg.text = yomikata || kanjiWithKana;
 		msg.lang = 'ja-JP'; //言語
 		window.speechSynthesis.speak(msg);
 
