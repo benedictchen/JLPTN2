@@ -66,6 +66,7 @@
 		wordCardNode.appendChild(newElem);
 		$(wordCardNode).addClass('animated bounceInRight');
 		
+		// Read in Japanese.
 		var msg = new SpeechSynthesisUtterance();
 		msg.rate = 0.8;  //レート
 		msg.pitch = 1; //ピッチ
@@ -73,6 +74,7 @@
 		msg.lang = 'ja-JP'; //言語
 		window.speechSynthesis.speak(msg);
 
+		// Read in English.
 		var def = new SpeechSynthesisUtterance();
 		def.rate = 1;  //レート
 		def.pitch = 1; //ピッチ
