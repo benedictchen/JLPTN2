@@ -23,6 +23,18 @@
     .assoc-images {
     	opacity: 0.3;
     }
+
+    .controls {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+
+    button {
+    	padding: 5px;
+    	border-radius: 5px;
+    	opacity: 0.6;
+    }
     </style>
   </head>
   <body> 
@@ -31,8 +43,8 @@
     	<p id="wordCard">Ready to Begin</p>
     </div>
     <div class="controls">
-    	<button id="startBtn" class="btn" onclick="javascript:startPressed();">START</button>
-    	<button id="stopBtn" class="btn" onclick="javascript:stopPressed();">STOP</button>
+    	<button id="startBtn" class="btn" onclick="javascript:startPressed();">START　(スタート)</button>
+    	<button id="stopBtn" class="btn" onclick="javascript:stopPressed();">STOP　(ストップ)</button>
     </div>
   </body>
   <script type='text/javascript' src='/javascripts/jquery3.2.js'>
@@ -72,6 +84,7 @@
 			console.log(`Images for this word: ${kanjiWithKana}`);
 			console.log(images);
 			if (imagesNode) {
+				var fragment = document.createDocumentFragment();
 				// Remove all nodes.
 				while(imagesNode.firstChild) {
 					imagesNode.removeChild(imagesNode.firstChild);
@@ -79,8 +92,9 @@
 				images.forEach((image)=>{
 					var imgNode = document.createElement('img');
 					imgNode.src = image.thumb_url;
-					imagesNode.appendChild(imgNode);
+					fragment.appendChild(imgNode);
 				});
+				imagesNode.appendChild(fragment);
 			}
 		}
 
