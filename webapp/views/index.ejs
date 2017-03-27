@@ -15,9 +15,18 @@
     	font-family: 'Helvetica Neue';
     	font-weight: 200;
     }
+
+    .main-text {
+    	text-shadow: white 0 0 25px, white 0 0 2px;
+    }
+
+    .assoc-images {
+    	opacity: 0.3;
+    }
     </style>
   </head>
   <body> 
+  	<div id="images" class="assoc-images"></div>
     <div class="centered center-card">
     	<p id="wordCard">Ready to Begin</p>
     </div>
@@ -35,6 +44,7 @@
   <script type='text/javascript' src='/javascripts/scripts.js'></script>
   <script>
 
+  	var GIANT_IMAGES_MAP = GIANT_IMAGES_MAP || {};
   	var isStopPressed = false;
 
   	
@@ -42,6 +52,7 @@
   	shuffle(N2_VOCAB);
 
   	var wordCardNode = document.getElementById('wordCard');
+  	var imagesNode = document.getElementById('images');
   	
   	function process() {
   		if (isStopPressed) {
@@ -54,7 +65,27 @@
 		var yomikata = currentVocab[0];
 		var count = 0;
 
+		if (GIANT_IMAGES_MAP) {
+			var images = GIANT_IMAGES_MAP[kanjiWithKana] || 
+						 GIANT_IMAGES_MAP[yomikata] || [];
+			console.log(GIANT_IMAGES_MAP);
+			console.log(`Images for this word: ${kanjiWithKana}`);
+			console.log(images);
+			if (imagesNode) {
+				// Remove all nodes.
+				while(imagesNode.firstChild) {
+					imagesNode.removeChild(imagesNode.firstChild);
+				}
+				images.forEach((image)=>{
+					var imgNode = document.createElement('img');
+					imgNode.src = image.thumb_url;
+					imagesNode.appendChild(imgNode);
+				});
+			}
+		}
+
 		var newElem = document.createElement('span');
+		newElem.classList.add('main-text');
 		newElem.textContent = [
 			kanjiWithKana, 
 			yomikata,
@@ -133,4 +164,5 @@
 
 	
   </script>
+  <script type='text/javascript' src='/javascripts/giant-hashmap.js'></script>
 </html>

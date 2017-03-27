@@ -16,7 +16,8 @@ fs.readdir('results', (err, files) => {
 	});
 	console.log(giantHashmap);
 	var result = JSON.stringify(giantHashmap);
-	fs.writeFile("output/giant-hashmap.json", result, function(err) {
+	var outputData = `var GIANT_IMAGES_MAP=${result}`;
+	fs.writeFile("output/giant-hashmap.js", outputData, function(err) {
 		if(err) {
 			return console.log(err);
 		}
