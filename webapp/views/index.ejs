@@ -30,7 +30,19 @@
     	top: 0;
     	left: 0;
     }
-
+    #fbComments {
+    	position: absolute;
+    	bottom: 0;
+    	right: -500px;
+    	height: 100%;
+    	transition: all 1s;
+    	border: 1px solid #ccc;
+    	background: white;
+    	box-shadow: 0 0 20px #ddd;
+    }
+    #fbComments:hover {
+		right: 0;
+    }
     button {
     	padding: 5px;
     	border-radius: 5px;
@@ -47,6 +59,7 @@
     	<button id="startBtn" class="btn" onclick="javascript:startPressed();">START　(スタート)</button>
     	<button id="stopBtn" class="btn" onclick="javascript:stopPressed();">STOP　(ストップ)</button>
     </div>
+    <div id="fbComments"><div class="fb-comments" data-href="https://brainblaster.herokuapp.com/" data-numposts="10"></div></div>
   </body>
   <script type='text/javascript' src='/javascripts/jquery3.2.js'>
   </script>
@@ -183,4 +196,12 @@
 	  ga('create', 'UA-67916116-2', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=367004936816412";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </html>
