@@ -10,8 +10,8 @@ var wordsToScrape = [];
 function fetchImagesForWord(word, success, failure) {
 	google.list({
 		keyword: word,
-		num: 50,
-		rlimit: '1',	
+		num: 20,
+		rlimit: '2',	
 		detail: true,
 		nightmare: {
 			show: true
