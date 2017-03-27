@@ -19,19 +19,34 @@
   </head>
   <body> 
     <div class="centered center-card">
-    	<p id="wordCard">Loading...</p>
+    	<p id="wordCard">Ready to Begin</p>
+    </div>
+    <div class="controls">
+    	<button id="startBtn" class="btn" onclick="javascript:startPressed();">START</button>
+    	<button id="stopBtn" class="btn" onclick="javascript:stopPressed();">STOP</button>
     </div>
   </body>
   <script type='text/javascript' src='/javascripts/jquery3.2.js'>
   </script>
   <script type='text/javascript' src='/javascripts/morphext.js'>
   </script>
-  <script type='text/javascript' src='/javascripts/n2-vocab.js'></script>
+  <script type='text/javascript' src='/javascripts/n2-vocab.js'>
+  </script>
+  <script type='text/javascript' src='/javascripts/scripts.js'></script>
   <script>
+
+  	var isStopPressed = false;
+
+  	
+  	// Randomize entries.
+  	shuffle(N2_VOCAB);
+
   	var wordCardNode = document.getElementById('wordCard');
   	
   	function process() {
-
+  		if (isStopPressed) {
+  			return;
+  		}
 		var currentVocab = N2_VOCAB.shift();
 		currentVocab.shift(); // strip off useless number.
 		var kanjiWithKana = currentVocab[1];
@@ -52,16 +67,23 @@
 		$(wordCardNode).addClass('animated bounceInRight');
 		
 		var msg = new SpeechSynthesisUtterance();
-		msg.rate = 1;  //レート
+		msg.rate = 0.8;  //レート
 		msg.pitch = 1; //ピッチ
-		msg.text = kanjiWithKana;
+		msg.text = kanjiWithKana || yomikata;
 		msg.lang = 'ja-JP'; //言語
 		window.speechSynthesis.speak(msg);
+
+		var def = new SpeechSynthesisUtterance();
+		def.rate = 1;  //レート
+		def.pitch = 1; //ピッチ
+		def.text = definition.split(';')[0];
+		def.lang = 'en-US'; 
+		window.speechSynthesis.speak(def);
 
 		$(newElem).Morphext({
 		    animation: "pulse",
 		    separator: ",",
-		    speed: 300,
+		    speed: 1000,
 		    complete: function () {
 		    	switch(count) {
 				    case 0:
@@ -85,7 +107,9 @@
 		        	count = 0;
 		        	setTimeout(() => {
 		        		$(wordCardNode).removeClass('bounceOutLeft');
-		        		process();
+		        		if (!isStopPressed) {
+		        			process();
+		        		}
 		        	}, 1000);
 		        	
 		        }
@@ -93,8 +117,18 @@
 		    }
 		});
   	}
-	
-  	process();
+
+  	function stopPressed() {
+  		isStopPressed = true;
+  		console.log('isStopPressed: ' + isStopPressed)
+  	}
+
+  	function startPressed() {
+  		console.log('isStopPressed: ' + isStopPressed)
+  		isStopPressed = false;
+  		process();
+  	}
+
 	
   </script>
 </html>
