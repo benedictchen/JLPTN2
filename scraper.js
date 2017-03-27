@@ -10,7 +10,7 @@ var wordsToScrape = [];
 function fetchImagesForWord(word, success, failure) {
 	google.list({
 		keyword: word,
-		num: 20,
+		num: 30,
 		rlimit: '2',	
 		detail: true,
 		nightmare: {
