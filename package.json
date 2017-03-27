@@ -2,9 +2,10 @@
   "name": "jlpt",
   "version": "1.0.0",
   "description": "",
-  "main": "morphext.js",
+  "main": "webapp/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./webapp/bin/www"
   },
   "author": "",
   "license": "GPL-3.0",
