@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/animate.css' />
+    <link rel='stylesheet' href='/stylesheets/morphext.css' />
+    <style>
+    .center-card {
+    	position: absolute;
+    	text-align: center;
+    	top: 50%;
+    	left: 50%;
+    	font-size: 30px;
+    	font-family: 'Helvetica Neue';
+    	font-weight: 200;
+    }
+    </style>
+  </head>
+  <body> 
+    <div class="centered center-card">
+    	<p id="wordCard">Loading...</p>
+    </div>
+  </body>
+  <script type='text/javascript' src='/javascripts/jquery3.2.js'>
+  </script>
+  <script type='text/javascript' src='/javascripts/morphext.js'>
+  </script>
+  <script type='text/javascript' src='/javascripts/n2-vocab.js'></script>
+
+  <script>
+  	var wordCardNode = document.getElementById('wordCard');
+  	
+  	function process() {
+
+		var currentVocab = N2_VOCAB.shift();
+		currentVocab.shift(); // strip off useless number.
+		var kanjiWithKana = currentVocab[1];
+		var definition = currentVocab[2];
+		var yomikata = currentVocab[0];
+		var count = 0;
+
+		var newElem = document.createElement('span');
+		newElem.classList.add('animated');
+		newElem.textContent = [
+			kanjiWithKana, 
+			yomikata,
+			definition, 
+		].join(', ');	
+		wordCardNode.removeChild(wordCardNode.firstChild);
+		wordCardNode.appendChild(newElem);
+		newElem.classList.add('bounceInLeft');
+
+		$(newElem).Morphext({
+		    animation: "pulse",
+		    separator: ",",
+		    speed: 300,
+		    complete: function () {
+		    	switch(count) {
+				    case 0:
+				        console.log(kanjiWithKana);
+				        break;
+				    case 1:
+				        console.log(yomikata);
+				        break;
+				    case 2:
+				        console.log(definition);
+				        break;
+				    default:
+				        console.log('\n');
+				}
+
+		        if (count >= 3) {
+		        	this.stop();
+		        	$(newElem).addClass('animated bounceOutLeft');
+		        	console.log('----->');
+		        	count = 0;
+		        	setTimeout(process, 1000);
+		        }
+		        count++;
+		    }
+		});
+  	}
+	
+  	process();
+	
+  </script>
+</html>
