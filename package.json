@@ -11,6 +11,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "express": "^4.15.2",
+    "express-generator": "^4.14.1",
     "images-scraper": "^2.0.11"
   }
 }
