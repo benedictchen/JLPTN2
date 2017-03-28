@@ -1,1 +1,108 @@
-{"meta":{"status":200},"data":[{"is_common":true,"tags":["wanikani7"],"japanese":[{"word":"以上","reading":"いじょう"},{"word":"已上","reading":"いじょう"}],"senses":[{"english_definitions":["not less than","... and more","... and upwards"],"parts_of_speech":["Adverbial noun","Temporal noun"],"links":[],"tags":[],"restrictions":[],"see_also":["余"],"antonyms":[],"source":[],"info":[]},{"english_definitions":["beyond ... (e.g. one's means)","further (e.g. nothing further to say)","more than ... (e.g. cannot pay more than that)"],"parts_of_speech":[],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["above-mentioned","foregoing"],"parts_of_speech":[],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["since ...","seeing that ..."],"parts_of_speech":[],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["this is all","that is the end","the end"],"parts_of_speech":[],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}}]}
+{
+    "meta": {
+        "status": 200
+    },
+    "data": [
+        {
+            "is_common": true,
+            "tags": [
+                "wanikani7"
+            ],
+            "japanese": [
+                {
+                    "word": "以上",
+                    "reading": "いじょう"
+                },
+                {
+                    "word": "已上",
+                    "reading": "いじょう"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "not less than",
+                        "... and more",
+                        "... and upwards"
+                    ],
+                    "parts_of_speech": [
+                        "Adverbial noun",
+                        "Temporal noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "余"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "beyond ... (e.g. one's means)",
+                        "further (e.g. nothing further to say)",
+                        "more than ... (e.g. cannot pay more than that)"
+                    ],
+                    "parts_of_speech": [],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "above-mentioned",
+                        "foregoing"
+                    ],
+                    "parts_of_speech": [],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "since ...",
+                        "seeing that ..."
+                    ],
+                    "parts_of_speech": [],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "this is all",
+                        "that is the end",
+                        "the end"
+                    ],
+                    "parts_of_speech": [],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        }
+    ]
+}

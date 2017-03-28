@@ -52,7 +52,7 @@ function fetchImagesForWord(word, success, failure) {
 
 
 
-var text = fs.readFileSync("./words-to-scrape.txt").toString('utf-8');
+var text = fs.readFileSync("./n3-kanji-to-scrape.txt").toString('utf-8');
 wordsToScrape = text.split('\n');
 
 function process() {
