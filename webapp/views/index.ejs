@@ -125,33 +125,43 @@
 		$(wordCardNode).addClass('animated bounceInRight');
 		
 		// Read in Japanese.
-		var msg = new SpeechSynthesisUtterance();
-		msg.rate = 0.8;  //レート
-		msg.pitch = 1; //ピッチ
-		msg.text =  kanjiWithKana || yomikata;
-		msg.lang = 'ja-JP'; //言語
-		window.speechSynthesis.speak(msg);
+		var msg1 = new SpeechSynthesisUtterance();
+		msg1.rate = 0.8;  //レート
+		msg1.pitch = 1; //ピッチ
+		msg1.text =  kanjiWithKana || yomikata;
+		msg1.lang = 'ja-JP'; //言語
+		window.speechSynthesis.speak(msg1);
 
 		// Read in English.
-		var def = new SpeechSynthesisUtterance();
-		def.rate = 1;  //レート
-		def.pitch = 1; //ピッチ
-		def.text = definition.split(';')[0];
-		def.lang = 'en-US'; 
-		window.speechSynthesis.speak(def);
+		var msg2 = new SpeechSynthesisUtterance();
+		msg2.rate = 1;  //レート
+		msg2.pitch = 1; //ピッチ
+		msg2.text = definition.split(';')[0];
+		msg2.lang = 'en-US'; 
+		window.speechSynthesis.speak(msg2);
 
-		// Read in Chinese.
+		// Read in Cantonese.
 		var msg3 = new SpeechSynthesisUtterance();
 		msg3.rate = 1;  //レート
 		msg3.pitch = 1; //ピッチ
 		msg3.text =  kanjiWithKana;
 		msg3.lang = 'zh-HK'; //言語
 		window.speechSynthesis.speak(msg3);
+		// Read in Mandarin Chinese.
+		var msg4 = new SpeechSynthesisUtterance();
+		msg4.rate = 1;  //レート
+		msg4.pitch = 1; //ピッチ
+		msg4.text =  kanjiWithKana;
+		msg4.lang = 'zh-CN'; //言語
+		window.speechSynthesis.speak(msg4);
+
+		// Finish by speaking Japanese again.
+		window.speechSynthesis.speak(msg1);
 
 		$(newElem).Morphext({
 		    animation: "pulse",
 		    separator: ",",
-		    speed: 1000,
+		    speed: 1500,	
 		    complete: function () {
 		    	switch(count) {
 				    case 0:
@@ -181,7 +191,7 @@
 		        		if (!isStopPressed) {
 		        			process();
 		        		}
-		        	}, 1000);
+		        	}, 1500);
 		        	
 		        }
 		        count++;
