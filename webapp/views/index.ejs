@@ -145,7 +145,7 @@
 		var msg1 = new SpeechSynthesisUtterance();
 		msg1.rate = 0.8;  //レート
 		msg1.pitch = 1; //ピッチ
-		msg1.text =  kanjiWithKana || yomikata;
+		msg1.text =  yomikata || kanjiWithKana;
 		msg1.lang = 'ja-JP'; //言語
 		window.speechSynthesis.speak(msg1);
 
