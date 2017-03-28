@@ -12,13 +12,16 @@
     	text-align: center;
     	top: 50%;
     	left: 50%;
-    	font-size: 60px;
+    	font-size: 120px;
     	font-family: 'Helvetica Neue';
     	font-weight: 200;
     }
 
     .main-text {
     	text-shadow: white 0 0 25px, white 0 0 2px;
+    	background-color: white;
+    	border-radius: 10px;
+    	box-shadow: 2px 2px 5px #ddd;
     }
 
     .assoc-images {
@@ -86,7 +89,7 @@
 		var currentVocab = N2_VOCAB.shift();
 		currentVocab.shift(); // strip off useless number.
 		var kanjiWithKana = currentVocab[1];
-		var definition = currentVocab[2];
+		var definition = currentVocab[2].split(';').slice(0,3).join(';');
 		var yomikata = currentVocab[0];
 		var romaji = wanakana.toRomaji(yomikata);
 		var count = 0;
