@@ -36,7 +36,7 @@
     #fbComments {
     	position: absolute;
     	bottom: 0;
-    	right: -500px;
+    	right: -530px;
     	height: 100%;
     	transition: all 1s;
     	border: 1px solid #ccc;
@@ -45,6 +45,12 @@
     }
     #fbComments:hover {
 		right: 0;
+    }
+    #fbLike {
+    	position: absolute;
+    	bottom: 0;
+    	left:0;
+    	padding: 15px;
     }
     button {
     	padding: 5px;
@@ -61,8 +67,16 @@
     <div class="controls">
     	<button id="startBtn" class="btn" onclick="javascript:startPressed();">START　(スタート)</button>
     	<button id="stopBtn" class="btn" onclick="javascript:stopPressed();">STOP　(ストップ)</button>
-    </div>
-    <div id="fbComments"><div class="fb-comments" data-href="https://brainblaster.herokuapp.com/" data-numposts="10"></div></div>
+    </div><br/>
+    <div id="fbComments">
+    	<div id="fbLike"
+		  class="fb-like"
+		  data-share="true"
+		  data-width="450"
+		  data-show-faces="true">
+		</div>
+    	<div class="fb-comments" data-href="https://brainblaster.herokuapp.com/" data-numposts="10"></div>
+	</div>
   </body>
   <script type='text/javascript' src='/javascripts/jquery3.2.js'>
   </script>
@@ -225,11 +239,22 @@
 	  ga('send', 'pageview');
 	</script>
 	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=367004936816412";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '241781759561086',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 </html>
