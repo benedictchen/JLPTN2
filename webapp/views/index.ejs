@@ -84,14 +84,16 @@
   </script>
   <script type='text/javascript' src='/javascripts/wanakana.js'>
   </script>
-  <script type='text/javascript' src='/javascripts/n2-vocab.js'>
+  <!-- <script type='text/javascript' src='/javascripts/n2-vocab.js'>
+  </script> -->
+  <script type='text/javascript' src='/javascripts/n3-vocab-list.js'>
   </script>
   <script type='text/javascript' src='/javascripts/scripts.js'></script>
   <script>
   	var isStopPressed = false;
 
   	// Randomize entries.
-  	shuffle(N2_VOCAB);
+  	shuffle(VOCAB_LIST);
 
   	var wordCardNode = document.getElementById('wordCard');
   	var imagesNode = document.getElementById('images');
@@ -100,7 +102,7 @@
   		if (isStopPressed) {
   			return;
   		}
-		var currentVocab = N2_VOCAB.shift();
+		var currentVocab = VOCAB_LIST.shift();
 		currentVocab.shift(); // strip off useless number.
 		var kanjiWithKana = currentVocab[1];
 		var definition = currentVocab[2].split(';').slice(0,3).join(';');

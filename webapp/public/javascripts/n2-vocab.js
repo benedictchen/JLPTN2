@@ -1,4 +1,4 @@
-var N2_VOCAB = [
+var VOCAB_LIST = [
   [2,"あい","愛","love",""  ],
   [3,"あいかわらず","相変わらず","as ever;as usual;the same",""  ],
   [4,"あいさつ","挨拶","greeting;salutation",""  ],
