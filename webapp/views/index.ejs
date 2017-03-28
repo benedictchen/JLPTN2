@@ -140,6 +140,14 @@
 		def.lang = 'en-US'; 
 		window.speechSynthesis.speak(def);
 
+		// Read in Chinese.
+		var msg3 = new SpeechSynthesisUtterance();
+		msg3.rate = 1;  //レート
+		msg3.pitch = 1; //ピッチ
+		msg3.text =  kanjiWithKana;
+		msg3.lang = 'zh-HK'; //言語
+		window.speechSynthesis.speak(msg3);
+
 		$(newElem).Morphext({
 		    animation: "pulse",
 		    separator: ",",
