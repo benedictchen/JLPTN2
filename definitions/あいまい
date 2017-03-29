@@ -1,0 +1,412 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "data": [
+        {
+            "is_common": true,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "曖昧",
+                    "reading": "あいまい"
+                },
+                {
+                    "word": "あい昧",
+                    "reading": "あいまい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "vague",
+                        "ambiguous",
+                        "unclear"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "fuzzy"
+                    ],
+                    "parts_of_speech": [],
+                    "links": [],
+                    "tags": [
+                        "Mathematics",
+                        "Computer terminology"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Ambiguity"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Ambiguity” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Ambiguity?oldid=495191685"
+                        },
+                        {
+                            "text": "Read “曖昧” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/曖昧?oldid=41430378"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [],
+                    "sentences": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": "http://dbpedia.org/resource/Ambiguity"
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "相舞",
+                    "reading": "あいまい"
+                },
+                {
+                    "word": "合舞",
+                    "reading": "あいまい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "dancing together in unison (in noh, kyogen, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "曖昧模糊",
+                    "reading": "あいまいもこ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "obscure",
+                        "vague",
+                        "ambiguous"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective",
+                        "Taru-adjective",
+                        "Adverb taking the 'to' particle"
+                    ],
+                    "links": [],
+                    "tags": [
+                        null
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "曖昧茶屋",
+                    "reading": "あいまいぢゃや"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "brothel fronting as a tea house, inn, restaurant, etc."
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "あいまい制御",
+                    "reading": "あいまいせいぎょ"
+                },
+                {
+                    "word": "曖昧制御",
+                    "reading": "あいまいせいぎょ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "fuzzy control"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Computer terminology"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "あいまい検索",
+                    "reading": "あいまいけんさく"
+                },
+                {
+                    "word": "曖昧検索",
+                    "reading": "あいまいけんさく"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "fuzzy reference",
+                        "ambiguous search",
+                        "ambiguous retrieval"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Computer terminology"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "曖昧屋",
+                    "reading": "あいまいや"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "brothel fronting as a tea house, inn, restaurant, etc."
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "曖昧さ",
+                    "reading": "あいまいさ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "ambiguity"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "曖昧"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "あいまい度",
+                    "reading": "あいまいど"
+                },
+                {
+                    "word": "曖昧度",
+                    "reading": "あいまいど"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "equivocation"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Computer terminology"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        },
+        {
+            "is_common": false,
+            "tags": [],
+            "japanese": [
+                {
+                    "word": "あいまい性",
+                    "reading": "あいまいせい"
+                },
+                {
+                    "word": "曖昧性",
+                    "reading": "あいまいせい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "ambiguity",
+                        "fuzziness"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": {
+                "jmdict": true,
+                "jmnedict": false,
+                "dbpedia": false
+            }
+        }
+    ]
+}

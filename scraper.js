@@ -10,7 +10,7 @@ var wordsToScrape = [];
 function fetchImagesForWord(word, success, failure) {
 	google.list({
 		keyword: word,
-		num: 30,
+		num: 50,
 		rlimit: '2',	
 		detail: true,
 		nightmare: {
@@ -20,7 +20,7 @@ function fetchImagesForWord(word, success, failure) {
 	})
 	.then(function (res) {
 		console.log('----------------------------------------');
-		console.log('first 10 results from google', res);
+		console.log('first N results from google', res);
 		console.log('----------------------------------------');
 		var encodedText = JSON.stringify(res);
 		
@@ -52,7 +52,7 @@ function fetchImagesForWord(word, success, failure) {
 
 
 
-var text = fs.readFileSync("./n3-kanji-to-scrape.txt").toString('utf-8');
+var text = fs.readFileSync("./input_files/lists/N2-Kanji-List.txt").toString('utf-8');
 wordsToScrape = text.split('\n');
 
 function process() {

@@ -26,20 +26,24 @@ function getWord(word, callback) {
 	http.request(options, cb).end();
 }
 
-var text = fs.readFileSync("./n3-kanji-to-scrape.txt").toString('utf-8');
+var text = fs.readFileSync("./input_files/lists/N2-Vocab-List.txt").toString('utf-8');
 var words = text.split('\n');
+var totalCount = words.length;
 
 var WAIT_TIME_MS = 800;
 
 function process() {
 	var word = words.pop();
+	var remaining = ` ${(words.length / totalCount)}% (${words.length} of ${totalCount})`;
+	console.log('current word: ' + word + remaining);
 	if (!word) {
 		return;
 	}
-	getWord(word, (data) => {
-		var path = 'definitions/' + word;
-		fs.exists(path, function(exists) { 
-			if (!exists) { 
+	
+	var path = 'definitions/' + word;
+	fs.exists(path, function(exists) { 
+		if (!exists) { 
+			getWord(word, (data) => {
 				fs.writeFile(path, data, function(err) {
 					if(err) {
 						return console.log(err);
@@ -47,11 +51,13 @@ function process() {
 					console.log('The file was saved!');
 					setTimeout(process, WAIT_TIME_MS);
 				}); 
-			} else {
-				console.error('file exists');
-			}
-		}); 
-	});
+			});
+		} else {
+			console.warn('file exists');
+			process();
+		}
+	}); 
+	
 }
 
 process();
