@@ -60,7 +60,9 @@
     </style>
   </head>
   <body> 
-  	<div id="images" class="assoc-images"></div>
+  	<div id="images" class="assoc-images grid"
+  		 data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 300 }'
+  	></div>
     <div class="centered center-card">
     	<p id="wordCard">Ready to Begin</p>
     </div>
@@ -80,16 +82,22 @@
   </body>
   <script type='text/javascript' src='/javascripts/jquery3.2.js'>
   </script>
+  <script type='text/javascript' src='/javascripts/masonry4.1.1.js'>
+  </script>
   <script type='text/javascript' src='/javascripts/morphext.js'>
   </script>
   <script type='text/javascript' src='/javascripts/wanakana.js'>
   </script>
-  <!-- <script type='text/javascript' src='/javascripts/n2-vocab.js'>
-  </script> -->
-  <script type='text/javascript' src='/javascripts/n3-vocab-list.js'>
+  <script type='text/javascript' src='/javascripts/n2-vocab.js'>
+  </script>
   </script>
   <script type='text/javascript' src='/javascripts/scripts.js'></script>
   <script>
+
+  	var GIPHY_API_URL = `http://api.giphy.com/v1/gifs/search?q={{query}}&api_key=dc6zaTOxFJmzC`;
+
+  	var TENOR_GIF_API = 'https://api.tenor.co/v1/search?tag=<query>&key=LIVDSRZULELA'
+
   	var isStopPressed = false;
 
   	// Randomize entries.
@@ -110,6 +118,10 @@
 		var romaji = wanakana.toRomaji(yomikata);
 		var count = 0;
 
+		var gifs = [];
+		// var query = kanjiWithKana;
+		var query = definition.replace(';', ',').replace(/\(*\)/, '');
+
 		$.get('/picturebank/' + [kanjiWithKana, yomikata].join(','), (data)=> {
 			var images = data.results || [];
 			console.log(`Images for this word: ${kanjiWithKana}`);
@@ -120,12 +132,29 @@
 				while(imagesNode.firstChild) {
 					imagesNode.removeChild(imagesNode.firstChild);
 				}
-				images.forEach((image)=>{
-					var imgNode = document.createElement('img');
-					imgNode.src = image.thumb_url;
-					fragment.appendChild(imgNode);
+				$.get(TENOR_GIF_API.replace('<query>', query), (res) => {
+					gifs = gifs.concat(res.results);
+					var imageCollection = [];
+					images.forEach((image) => {
+						imageCollection.push(image.thumb_url);
+					});
+					if (gifs.length) {
+						var first10Gifs = gifs.slice(0,3);
+						shuffle(first10Gifs);
+						first10Gifs.forEach((item) => {
+							imageCollection.push(item.media[0].gif.url);
+						});
+					}
+					console.log('gifs:', gifs);
+					shuffle(imageCollection);
+					imageCollection.forEach((imgUrl)=>{
+						var imgNode = document.createElement('img');
+						imgNode.classList.add('grid-item');
+						imgNode.src = imgUrl;
+						fragment.appendChild(imgNode);
+					});
+					imagesNode.appendChild(fragment);
 				});
-				imagesNode.appendChild(fragment);
 			}
 		});
 
