@@ -19,6 +19,10 @@ function getWord(word, callback) {
 			str += chunk;
 		});
 		response.on('end', function () {
+			var data = JSON.parse(str);	
+			if (data.meta && data.meta.status !== 200) {
+				throw Error('API failed with word: ' + word);
+			}
 			callback(str);
 		});
 	}
@@ -26,14 +30,14 @@ function getWord(word, callback) {
 	http.request(options, cb).end();
 }
 
-var text = fs.readFileSync("./input_files/lists/N2-Vocab-List.txt").toString('utf-8');
+var text = fs.readFileSync("./input_files/lists/N1-Vocab-List.txt").toString('utf-8');
 var words = text.split('\n');
 var totalCount = words.length;
 
 var WAIT_TIME_MS = 800;
 
 function process() {
-	var word = words.pop();
+	var word = words.shift();
 	var remaining = ` ${(words.length / totalCount)}% (${words.length} of ${totalCount})`;
 	console.log('current word: ' + word + remaining);
 	if (!word) {
