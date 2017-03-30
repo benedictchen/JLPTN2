@@ -76,7 +76,7 @@ function getFriendlyTime(totalSeconds) {
 	delta -= minutes * 60;
 
 	// what's left is seconds
-	var seconds = delta % 60; 
+	var seconds = (delta % 60).toFixed(2); 
 	return `[ ${isNaN(days) ? '?' : days } Days, ` + 
 				`${isNaN(hours) ? '?' : hours} Hours, ` + 
 				`${isNaN(minutes) ? '?' : minutes} Minutes, ` + 
