@@ -5,6 +5,9 @@ var Scraper = require ('images-scraper');
 var google = new Scraper.Google();
 
 var wordsToScrape = [];
+var wordsRetrieved = 0;
+var wordsSkipped = 0;
+var wordsFailed = 0;
 
 
 function fetchImagesForWord(word, success, failure) {
@@ -33,11 +36,13 @@ function fetchImagesForWord(word, success, failure) {
 			    }
 			    console.log("The file was saved!");
 			    if (success) {
+			    	wordsRetrieved++;
 			    	success();
 			    }
 			}); 
 		  } else {
 		  	console.error('file exists');
+		  	wordsSkipped++;
 		  	success();
 		  }
 		}); 
@@ -45,6 +50,7 @@ function fetchImagesForWord(word, success, failure) {
 	}).catch(function(err) {
 		console.log('err', err);
 		if (failure) {
+			wordsFailed++;
 			failure();
 		}
 	});
@@ -56,7 +62,7 @@ var text = fs.readFileSync("./input_files/lists/N1-Vocab-List.txt").toString('ut
 wordsToScrape = text.split('\n');
 var totalCount = wordsToScrape.length;
 var startTime = new Date();
-var wordsRetrieved = 0;
+
 
 
 function getFriendlyTime(totalSeconds) {
@@ -85,16 +91,18 @@ function getFriendlyTime(totalSeconds) {
 
 
 function process() {
-	var elapsedTime = (new Date().getTime()) - startTime;
-	var wordsPerTime = wordsRetrieved / elapsedTime;
-	var estimatedTotalTime = totalCount / wordsPerTime;
-	var timeLeftInSeconds = (estimatedTotalTime - elapsedTime) / 1000;
-	var elapsedTimeSeconds = elapsedTime / 1000;
+	var elapsedTimeMs = (new Date().getTime()) - startTime; // time ms?
+	var wordsPerTime = wordsRetrieved / elapsedTimeMs;
+	var estimatedTotalTime = (totalCount - wordsSkipped) / wordsPerTime;
+	var timeLeftInSeconds = (estimatedTotalTime - elapsedTimeMs) / 1000;
+	var elapsedTimeSeconds = elapsedTimeMs / 1000;
 	
 	console.log('Grabbing from: ' + wordsToScrape.length);
 	var currentWord = wordsToScrape.shift();
 
-	var remaining = ` ${(wordsToScrape.length / totalCount).toFixed(2)}% (${wordsToScrape.length} of ${totalCount})`;
+	var remaining = ` ${(((totalCount - wordsToScrape.length) / totalCount) * 100).toFixed(2)}% (${wordsToScrape.length} of ${totalCount})`;
+	console.log(`Words skipped: ${wordsSkipped}`);
+	console.log(`Words failed: ${wordsFailed}`);
 	console.log('current word: ' + currentWord + remaining);
 	console.log(`Elapsed Time: ` + getFriendlyTime(elapsedTimeSeconds)) + ` have passed.`;
 	console.log(`Time Remaining: ` + getFriendlyTime(timeLeftInSeconds)) + `left.`;
@@ -103,9 +111,9 @@ function process() {
 		var writePath = 'results/' + currentWord;
 		fs.exists(writePath, function(exists) { 
 			  if (!exists) { 
-			  	wordsRetrieved++;
 			  	fetchImagesForWord(currentWord, process);
 			  } else {
+			  	wordsSkipped++;
 			  	process();
 			  }
 		});
