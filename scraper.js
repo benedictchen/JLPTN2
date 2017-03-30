@@ -97,13 +97,14 @@ function process() {
 	var timeLeftInSeconds = (estimatedTotalTime - elapsedTimeMs) / 1000;
 	var elapsedTimeSeconds = elapsedTimeMs / 1000;
 	
-	console.log('Grabbing from: ' + wordsToScrape.length);
+	console.log('Remaining # of Words: ' + wordsToScrape.length);
 	var currentWord = wordsToScrape.shift();
 
 	var remaining = ` ${(((totalCount - wordsToScrape.length) / totalCount) * 100).toFixed(2)}% (${wordsToScrape.length} of ${totalCount})`;
-	console.log(`Words skipped: ${wordsSkipped}`);
-	console.log(`Words failed: ${wordsFailed}`);
-	console.log('current word: ' + currentWord + remaining);
+	console.log(`Words Retrieved This Session: ${wordsRetrieved}`);
+	console.log(`Words Skipped: ${wordsSkipped}`);
+	console.log(`Words Failed: ${wordsFailed}`);
+	console.log('Current Word: ' + currentWord + remaining);
 	console.log(`Elapsed Time: ` + getFriendlyTime(elapsedTimeSeconds)) + ` have passed.`;
 	console.log(`Time Remaining: ` + getFriendlyTime(timeLeftInSeconds)) + `left.`;
 
