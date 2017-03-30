@@ -52,17 +52,48 @@ function fetchImagesForWord(word, success, failure) {
 
 
 
-var text = fs.readFileSync("./input_files/lists/N2-Kanji-List.txt").toString('utf-8');
+var text = fs.readFileSync("./input_files/lists/N1-Vocab-List.txt").toString('utf-8');
 wordsToScrape = text.split('\n');
+var totalCount = wordsToScrape.length;
+var startTime = new Date();
+var wordsRetrieved = 0;
 
 function process() {
+	var elapsedTime = (new Date().getTime()) - startTime;
+	var wordsPerTime = wordsRetrieved / elapsedTime;
+	var estimatedTotalTime = totalCount / wordsPerTime;
+	var timeLeftInSeconds = (estimatedTotalTime - elapsedTime) / 1000;
+	var delta = timeLeftInSeconds;
+	
+	var days = Math.floor(delta / 86400);
+	delta -= days * 86400;
+	// calculate (and subtract) whole hours
+	var hours = Math.floor(delta / 3600) % 24;
+	delta -= hours * 3600;
+	// calculate (and subtract) whole minutes
+	var minutes = Math.floor(delta / 60) % 60;
+	delta -= minutes * 60;
+	// what's left is seconds
+	var seconds = (delta % 60).toFixed(2);
+
 	console.log('Grabbing from: ' + wordsToScrape.length);
 	var currentWord = wordsToScrape.shift();
-	console.log('The current word is: ', currentWord);
+
+	var remaining = ` ${(wordsToScrape.length / totalCount).toFixed(2)}% (${wordsToScrape.length} of ${totalCount})`;
+	console.log('current word: ' + currentWord + remaining);
+	console.log(`>> Time Remaining: ` + 
+				`[ ${isNaN(days) ? '?' : days } Days, ` + 
+				`${isNaN(hours) ? '?' : hours} Hours, ` + 
+				`${isNaN(minutes) ? '?' : minutes} Minutes, ` + 
+				`and ${isNaN(seconds) ? '?' : seconds} Seconds ` + 
+				`] left.`);
+
+
 	if (currentWord) {
 		var writePath = 'results/' + currentWord;
 		fs.exists(writePath, function(exists) { 
 			  if (!exists) { 
+			  	wordsRetrieved++;
 			  	fetchImagesForWord(currentWord, process);
 			  } else {
 			  	process();
