@@ -1,5 +1,5 @@
 var fs = require('fs');
-
+var say = require('say');	
 var Scraper = require ('images-scraper');
 //https://github.com/pevers/images-scraper
 var google = new Scraper.Google();
@@ -11,6 +11,15 @@ var wordsFailed = 0;
 
 
 function fetchImagesForWord(word, success, failure) {
+
+
+	// Use default system voice and speed
+	say.speak(word, 'Otoya', 1, () => {
+		say.speak(word, 'Sin-ji', 1, () => {
+			say.speak(word, 'Ting-Ting');		
+		});	
+	});
+	
 	google.list({
 		keyword: word,
 		num: 50,
