@@ -1,6 +1,6 @@
 var fs = require('fs');
 var http = require('http');
-
+var INPUT_PATH = './input_files/sae-intermediate/ch2-vocab.txt';
 var JISHO_API_URL = `http://jisho.org/api/v1/search/words?keyword=`;
 
 function getWord(word, callback) {
@@ -30,7 +30,7 @@ function getWord(word, callback) {
 	http.request(options, cb).end();
 }
 
-var text = fs.readFileSync("./input_files/lists/N1-Vocab-List.txt").toString('utf-8');
+var text = fs.readFileSync(INPUT_PATH).toString('utf-8');
 var words = text.split('\n');
 var totalCount = words.length;
 

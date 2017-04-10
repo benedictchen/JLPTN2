@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var giantList = [];
 
-var OUTPUT_NAME = 'n3-vocab-list';
+var OUTPUT_NAME = 'sae-intermediate-ch1-vocab';
 
 var DEFINITIONS_FOLDER = 'definitions';
 
