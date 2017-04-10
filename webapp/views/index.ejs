@@ -7,14 +7,16 @@
     <link rel='stylesheet' href='/stylesheets/animate.css' />
     <link rel='stylesheet' href='/stylesheets/morphext.css' />
     <style>
+    body {
+    	font-family: 'Helvetica Neue';
+    	font-weight: 200;
+    }
     .center-card {
     	position: absolute;
     	text-align: center;
     	top: 50%;
     	left: 50%;
     	font-size: 80px;
-    	font-family: 'Helvetica Neue';
-    	font-weight: 200;
     }
 
     .main-text {
@@ -32,6 +34,12 @@
     	position: absolute;
     	top: 0;
     	left: 0;
+    	border: 1px solid #ddd;
+    	border-radius: 5px;
+    	padding: 10px;
+    	box-shadow: #ccc 0 0 10px;
+    	background: white;
+    	opacity: 0.8;
     }
     #fbComments {
     	position: absolute;
@@ -67,6 +75,18 @@
     <div class="controls">
     	<button id="startBtn" class="btn" onclick="javascript:startPressed();">START　(スタート)</button>
     	<button id="stopBtn" class="btn" onclick="javascript:stopPressed();">STOP　(ストップ)</button>
+    	<form>
+    		<div>
+				<input type="checkbox">N1</form>
+				<input type="checkbox">N2</form>
+				<input type="checkbox">N3</form>
+				<input type="checkbox">N4</form>
+				<input type="checkbox">N5</form>
+			</div>
+		</form>
+
+		<button>Faster</button>
+		<button>Slower</button>
     </div><br/>
     <div id="fbComments">
     	<div id="fbLike"
@@ -179,7 +199,7 @@
 		$(newElem).Morphext({
 		    animation: "pulse",
 		    separator: ",",
-		    speed: 1500,	
+		    speed: 2000,	
 		    complete: function () {
 		    	switch(count) {
 				    case 0:
@@ -209,7 +229,7 @@
 		        		if (!isStopPressed) {
 		        			process();
 		        		}
-		        	}, 1500);
+		        	}, 2000);
 		        	
 		        }
 		        count++;

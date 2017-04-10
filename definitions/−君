@@ -1,1 +1,885 @@
-{"meta":{"status":200},"data":[{"is_common":true,"tags":["wanikani8"],"japanese":[{"word":"君","reading":"きみ"},{"word":"公","reading":"きみ"}],"senses":[{"english_definitions":["you","buddy","pal"],"parts_of_speech":["Pronoun","No-adjective"],"links":[],"tags":["Male term or language","Familiar language"],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":["also used colloquially by young females"]},{"english_definitions":["monarch","ruler","sovereign","(one's) master"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":["orig. meaning"]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":true,"tags":["wanikani8"],"japanese":[{"word":"君","reading":"くん"}],"senses":[{"english_definitions":["Mr (junior)","master","boy"],"parts_of_speech":["Noun","Suffix"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君","reading":"きんじ"}],"senses":[{"english_definitions":["you"],"parts_of_speech":["Noun"],"links":[],"tags":["Archaism","Colloquialism"],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君","reading":"ぎみ"}],"senses":[{"english_definitions":["suffix appended to somebody else's family members"],"parts_of_speech":["Suffix"],"links":[],"tags":["Honorific or respectful (sonkeigo)"],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":true,"tags":[],"japanese":[{"word":"君主","reading":"くんしゅ"}],"senses":[{"english_definitions":["ruler","monarch","sovereign"],"parts_of_speech":["Noun","No-adjective"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["Monarch"],"parts_of_speech":["Wikipedia definition"],"links":[{"text":"Read “Monarch” on English Wikipedia","url":"http://en.wikipedia.org/wiki/Monarch?oldid=495286380"},{"text":"Read “君主” on Japanese Wikipedia","url":"http://ja.wikipedia.org/wiki/君主?oldid=42742469"}],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[],"sentences":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":"http://dbpedia.org/resource/Monarch"}},{"is_common":true,"tags":[],"japanese":[{"word":"君臨","reading":"くんりん"}],"senses":[{"english_definitions":["reigning","controlling"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["to reign","to dictate","to control"],"parts_of_speech":["Suru verb"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":true,"tags":[],"japanese":[{"word":"君子","reading":"くんし"}],"senses":[{"english_definitions":["man of virtue","person of high rank","wise man"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":true,"tags":[],"japanese":[{"word":"君たち","reading":"きみたち"},{"word":"君達","reading":"きみたち"}],"senses":[{"english_definitions":["you (plural)","all of you","you all"],"parts_of_speech":["Pronoun","No-adjective"],"links":[],"tags":["Familiar language","Male term or language"],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":["also used colloquially by young females"]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":true,"tags":[],"japanese":[{"word":"君が代","reading":"きみがよ"},{"word":"君が世","reading":"きみがよ"}],"senses":[{"english_definitions":["Imperial reign"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["title of Japanese national anthem"],"parts_of_speech":[],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["Kimigayo"],"parts_of_speech":["Wikipedia definition"],"links":[{"text":"Read “Kimigayo” on English Wikipedia","url":"http://en.wikipedia.org/wiki/Kimigayo?oldid=494722693"},{"text":"Read “君が代” on Japanese Wikipedia","url":"http://ja.wikipedia.org/wiki/君が代?oldid=42654650"}],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[],"sentences":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":"http://dbpedia.org/resource/Kimigayo"}},{"is_common":false,"tags":[],"japanese":[{"word":"君主制","reading":"くんしゅせい"},{"word":"君主政","reading":"くんしゅせい"}],"senses":[{"english_definitions":["monarchy"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["Monarchy"],"parts_of_speech":["Wikipedia definition"],"links":[{"text":"Read “Monarchy” on English Wikipedia","url":"http://en.wikipedia.org/wiki/Monarchy?oldid=494985438"},{"text":"Read “君主制” on Japanese Wikipedia","url":"http://ja.wikipedia.org/wiki/君主制?oldid=42638344"}],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[],"sentences":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":"http://dbpedia.org/resource/Monarchy"}},{"is_common":false,"tags":[],"japanese":[{"word":"君沢形","reading":"きみさわがた"}],"senses":[{"english_definitions":["schooner style ship built at the end of the Shogunate"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["Russian schooner Heda"],"parts_of_speech":["Wikipedia definition"],"links":[{"text":"Read “Russian schooner Heda” on English Wikipedia","url":"http://en.wikipedia.org/wiki/Russian_schooner_Heda?oldid=491395922"},{"text":"Read “君沢形” on Japanese Wikipedia","url":"http://ja.wikipedia.org/wiki/君沢形?oldid=41743362"}],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[],"sentences":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":"http://dbpedia.org/resource/Russian_schooner_Heda"}},{"is_common":false,"tags":[],"japanese":[{"word":"君命","reading":"くんめい"}],"senses":[{"english_definitions":["the orders of one's ruler"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君側","reading":"くんそく"}],"senses":[{"english_definitions":["proximity of a monarch or lord"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君側の奸","reading":"くんそくのかん"}],"senses":[{"english_definitions":["someone who curries favor with their master while secretly plotting against him"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君主道徳","reading":"くんしゅどうとく"}],"senses":[{"english_definitions":["Herrenmoral (master morality, as a philosophical concept of Nietzsche)"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":["奴隷道徳"],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君国","reading":"くんこく"}],"senses":[{"english_definitions":["monarchy"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["monarch and nation"],"parts_of_speech":[],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":["wanikani8"],"japanese":[{"word":"君主国","reading":"くんしゅこく"}],"senses":[{"english_definitions":["monarchy"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君主政体","reading":"くんしゅせいたい"},{"word":"君主制体","reading":"くんしゅせいたい"}],"senses":[{"english_definitions":["monarchy"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君子豹変","reading":"くんしひょうへん"}],"senses":[{"english_definitions":["the wise readily adapt themselves to changed circumstances","the wise are quick to acknowledge their mistakes and correct them"],"parts_of_speech":["Noun"],"links":[],"tags":[null],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]},{"english_definitions":["(in colloquial usage, ironically or as an excuse) the wise make no scruple in suddenly changing their demeanor"],"parts_of_speech":[],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}},{"is_common":false,"tags":[],"japanese":[{"word":"君子蘭","reading":"くんしらん"}],"senses":[{"english_definitions":["clivia (esp. drooping clivia, Clivia nobilis)","Kaffir lily (Clivia miniata)"],"parts_of_speech":["Noun"],"links":[],"tags":[],"restrictions":[],"see_also":[],"antonyms":[],"source":[],"info":[]}],"attribution":{"jmdict":true,"jmnedict":false,"dbpedia":false}}]}
+{
+  "data": [
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": true,
+      "japanese": [
+        {
+          "reading": "きみ",
+          "word": "君"
+        },
+        {
+          "reading": "きみ",
+          "word": "公"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "you",
+            "buddy",
+            "pal"
+          ],
+          "info": [
+            "also used colloquially by young females"
+          ],
+          "links": [],
+          "parts_of_speech": [
+            "Pronoun",
+            "No-adjective"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": [
+            "Male term or language",
+            "Familiar language"
+          ]
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "monarch",
+            "ruler",
+            "sovereign",
+            "(one's) master"
+          ],
+          "info": [
+            "orig. meaning"
+          ],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": [
+        "wanikani8"
+      ]
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": true,
+      "japanese": [
+        {
+          "reading": "くん",
+          "word": "君"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "Mr (junior)",
+            "master",
+            "boy"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun",
+            "Suffix"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": [
+        "wanikani8"
+      ]
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "きんじ",
+          "word": "君"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "you"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": [
+            "Archaism",
+            "Colloquialism"
+          ]
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "ぎみ",
+          "word": "君"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "suffix appended to somebody else's family members"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Suffix"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": [
+            "Honorific or respectful (sonkeigo)"
+          ]
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": "http://dbpedia.org/resource/Monarch",
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": true,
+      "japanese": [
+        {
+          "reading": "くんしゅ",
+          "word": "君主"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "ruler",
+            "monarch",
+            "sovereign"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun",
+            "No-adjective"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "Monarch"
+          ],
+          "info": [],
+          "links": [
+            {
+              "text": "Read “Monarch” on English Wikipedia",
+              "url": "http://en.wikipedia.org/wiki/Monarch?oldid=495286380"
+            },
+            {
+              "text": "Read “君主” on Japanese Wikipedia",
+              "url": "http://ja.wikipedia.org/wiki/君主?oldid=42742469"
+            }
+          ],
+          "parts_of_speech": [
+            "Wikipedia definition"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "sentences": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": true,
+      "japanese": [
+        {
+          "reading": "くんりん",
+          "word": "君臨"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "reigning",
+            "controlling"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "to reign",
+            "to dictate",
+            "to control"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Suru verb"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": true,
+      "japanese": [
+        {
+          "reading": "くんし",
+          "word": "君子"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "man of virtue",
+            "person of high rank",
+            "wise man"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": true,
+      "japanese": [
+        {
+          "reading": "きみたち",
+          "word": "君たち"
+        },
+        {
+          "reading": "きみたち",
+          "word": "君達"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "you (plural)",
+            "all of you",
+            "you all"
+          ],
+          "info": [
+            "also used colloquially by young females"
+          ],
+          "links": [],
+          "parts_of_speech": [
+            "Pronoun",
+            "No-adjective"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": [
+            "Familiar language",
+            "Male term or language"
+          ]
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": "http://dbpedia.org/resource/Kimigayo",
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": true,
+      "japanese": [
+        {
+          "reading": "きみがよ",
+          "word": "君が代"
+        },
+        {
+          "reading": "きみがよ",
+          "word": "君が世"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "Imperial reign"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "title of Japanese national anthem"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "Kimigayo"
+          ],
+          "info": [],
+          "links": [
+            {
+              "text": "Read “Kimigayo” on English Wikipedia",
+              "url": "http://en.wikipedia.org/wiki/Kimigayo?oldid=494722693"
+            },
+            {
+              "text": "Read “君が代” on Japanese Wikipedia",
+              "url": "http://ja.wikipedia.org/wiki/君が代?oldid=42654650"
+            }
+          ],
+          "parts_of_speech": [
+            "Wikipedia definition"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "sentences": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": "http://dbpedia.org/resource/Monarchy",
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんしゅせい",
+          "word": "君主制"
+        },
+        {
+          "reading": "くんしゅせい",
+          "word": "君主政"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "monarchy"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "Monarchy"
+          ],
+          "info": [],
+          "links": [
+            {
+              "text": "Read “Monarchy” on English Wikipedia",
+              "url": "http://en.wikipedia.org/wiki/Monarchy?oldid=494985438"
+            },
+            {
+              "text": "Read “君主制” on Japanese Wikipedia",
+              "url": "http://ja.wikipedia.org/wiki/君主制?oldid=42638344"
+            }
+          ],
+          "parts_of_speech": [
+            "Wikipedia definition"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "sentences": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": "http://dbpedia.org/resource/Russian_schooner_Heda",
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "きみさわがた",
+          "word": "君沢形"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "schooner style ship built at the end of the Shogunate"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "Russian schooner Heda"
+          ],
+          "info": [],
+          "links": [
+            {
+              "text": "Read “Russian schooner Heda” on English Wikipedia",
+              "url": "http://en.wikipedia.org/wiki/Russian_schooner_Heda?oldid=491395922"
+            },
+            {
+              "text": "Read “君沢形” on Japanese Wikipedia",
+              "url": "http://ja.wikipedia.org/wiki/君沢形?oldid=41743362"
+            }
+          ],
+          "parts_of_speech": [
+            "Wikipedia definition"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "sentences": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんめい",
+          "word": "君命"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "the orders of one's ruler"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんそく",
+          "word": "君側"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "proximity of a monarch or lord"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんそくのかん",
+          "word": "君側の奸"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "someone who curries favor with their master while secretly plotting against him"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんしゅどうとく",
+          "word": "君主道徳"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "Herrenmoral (master morality, as a philosophical concept of Nietzsche)"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [
+            "奴隷道徳"
+          ],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんこく",
+          "word": "君国"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "monarchy"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "monarch and nation"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんしゅこく",
+          "word": "君主国"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "monarchy"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": [
+        "wanikani8"
+      ]
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんしゅせいたい",
+          "word": "君主政体"
+        },
+        {
+          "reading": "くんしゅせいたい",
+          "word": "君主制体"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "monarchy"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんしひょうへん",
+          "word": "君子豹変"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "the wise readily adapt themselves to changed circumstances",
+            "the wise are quick to acknowledge their mistakes and correct them"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": [
+            null
+          ]
+        },
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "(in colloquial usage, ironically or as an excuse) the wise make no scruple in suddenly changing their demeanor"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    },
+    {
+      "attribution": {
+        "dbpedia": false,
+        "jmdict": true,
+        "jmnedict": false
+      },
+      "is_common": false,
+      "japanese": [
+        {
+          "reading": "くんしらん",
+          "word": "君子蘭"
+        }
+      ],
+      "senses": [
+        {
+          "antonyms": [],
+          "english_definitions": [
+            "clivia (esp. drooping clivia, Clivia nobilis)",
+            "Kaffir lily (Clivia miniata)"
+          ],
+          "info": [],
+          "links": [],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "source": [],
+          "tags": []
+        }
+      ],
+      "tags": []
+    }
+  ],
+  "meta": {
+    "status": 200
+  }
+}
